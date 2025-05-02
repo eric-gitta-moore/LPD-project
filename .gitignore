@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+CCPD2019
+*.zip
+
+*.pdparams
+*.pdopt
+*.pth
+*.pdiparams
+*.pdmodel
+*.onnx
+*.pdiparams.info
+*.log

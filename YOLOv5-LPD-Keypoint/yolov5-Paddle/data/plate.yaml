@@ -1,0 +1,8 @@
+
+path: /home/aistudio/datasets  # dataset root dir
+train: train
+val: val  
+test: test
+# Classes
+names:
+  0: plate

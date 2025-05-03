@@ -56,7 +56,7 @@ def main():
         sys.exit(1)
     
     print("开始设置CUDA库软链接...")
-    create_symlink(CUDNN_PATH, "libcudnn.so.9", "libcudnn.so")
+    create_symlink(CUDNN_PATH, "libcudnn.so.8", "libcudnn.so")
     create_symlink(CUBLAS_PATH, "libcublas.so.11", "libcublas.so")
     print("设置完成！")
 

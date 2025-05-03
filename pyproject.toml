@@ -13,7 +13,10 @@ dependencies = [
     "numpy>=1.18.5",
     "nvidia-cublas-cu11>=11.11.3.6",
     "nvidia-cuda-runtime-cu11>=11.8.89",
-    "nvidia-cudnn-cu11>=9.9.0.52",
+    "nvidia-cudnn-cu11<9",
+    "nvidia-cufft-cu11>=10.9.0.58",
+    "nvidia-curand-cu11>=10.3.0.86",
+    "onnxruntime-gpu==1.19.*",
     "opencv-python>=4.1.1",
     "paddlepaddle-gpu==2.4.1.post112",
     "pandas>=1.1.4",
@@ -35,6 +38,7 @@ find-links = ["https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html"]
 
 [tool.uv.sources]
 torch = [{ index = "torch" }]
+onnxruntime-gpu = [{ index = "onnxruntime" }]
 paddlepaddle-gpu = [
     { url = "https://paddle-wheel.bj.bcebos.com/2.4.1/linux/linux-gpu-cuda11.2-cudnn8-mkl-gcc8.2-avx/paddlepaddle_gpu-2.4.1.post112-cp39-cp39-linux_x86_64.whl" },
 ]
@@ -46,4 +50,9 @@ default = true
 [[tool.uv.index]]
 name = "torch"
 url = "https://download.pytorch.org/whl/cu118"
+explicit = true
+
+[[tool.uv.index]]
+name = "onnxruntime"
+url = "https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-11/pypi/simple/"
 explicit = true

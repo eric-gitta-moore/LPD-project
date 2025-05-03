@@ -122,10 +122,6 @@ python main.py
 - WSL 用户需要确保 WSL 已正确配置 CUDA 支持
 - 使用 OpenCV 显示中文时，需要确保已正确安装中文字体
 
-## 许可证
-
-[待添加]
-
-## 贡献指南
-
-[待添加]
+## 参考
+- [YOLOv5车牌+关键点检测](https://aistudio.baidu.com/projectdetail/6545272)
+- [车牌识别LPRNet](https://aistudio.baidu.com/projectdetail/5628649)

@@ -10,7 +10,10 @@ dependencies = [
     "jupyterlab>=4.4.1",
     "matplotlib>=3.2.2",
     "numpy>=1.18.5",
+    "nvidia-cuda-runtime-cu11>=11.8.89",
+    "nvidia-cudnn-cu11>=9.9.0.52",
     "opencv-python>=4.1.1",
+    "paddlepaddle-gpu==2.4.1.post112",
     "pandas>=1.1.4",
     "pillow>=7.1.2",
     "pip>=25.1",
@@ -21,15 +24,18 @@ dependencies = [
     "seaborn>=0.11.0",
     "setuptools>=65.5.1",
     "tqdm>=4.64.0",
-    "paddlepaddle-gpu==2.6.*",
     # "torch==2.0.0+cu118",
 ]
 
 [tool.uv.pip]
 index-strategy = "unsafe-best-match"
+find-links = ["https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html"]
 
 [tool.uv.sources]
 torch = [{ index = "torch" }]
+paddlepaddle-gpu = [
+    { url = "https://paddle-wheel.bj.bcebos.com/2.4.1/linux/linux-gpu-cuda11.2-cudnn8-mkl-gcc8.2-avx/paddlepaddle_gpu-2.4.1.post112-cp39-cp39-linux_x86_64.whl" },
+]
 
 [[tool.uv.index]]
 url = "https://pypi.tuna.tsinghua.edu.cn/simple/"

@@ -19,3 +19,4 @@ CCPD2019
 *.onnx
 *.pdiparams.info
 *.log
+/assets

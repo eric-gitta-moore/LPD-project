@@ -36,5 +36,7 @@ jupyter lab
 ## 注意事项
 
 - 确保在启动 Jupyter Lab 之前已经正确设置环境变量
+   - 如果直接使用 vscode 选择 python 环境运行的 jupyter 的话，会导致找不到 LD_LIBRARY_PATH 环境变量
+   - 如果非要这么干，需要在 jupyter 的 kernel.json 里面设置 env 字段
 - Jupyter Lab 默认会在端口 8888 上运行，如果该端口被占用，会自动使用下一个可用端口
 - 为了安全起见，建议妥善保管 token 信息

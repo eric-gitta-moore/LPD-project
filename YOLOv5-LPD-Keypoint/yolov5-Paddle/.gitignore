@@ -1,0 +1,4 @@
+runs
+!runs/val/exp
+!runs/train/exp
+!runs/detect/exp

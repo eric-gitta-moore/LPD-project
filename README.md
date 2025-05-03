@@ -8,7 +8,7 @@
    <td><img src='./YOLOv5-LPD-Keypoint/demo/demo3.jpg' /></td>
 </tr>
 <tr>
-  <td colspan=2 align=center><img src='https://ai-studio-static-online.cdn.bcebos.com/7935e425eeec49dc90660b2942e5095477384d3d44ba4957a1c05cb64fe7ce71' /></td>
+  <td colspan=2 align=center><img src='./docs/yolo-demo.png' /></td>
 </tr>
 </table>
 
@@ -18,13 +18,13 @@
 
 针对拍摄角度引起的透视变形，可再增加一步车牌校正的流程，整个任务流为：车牌检测、车牌校正、车牌识别
 
-![](https://ai-studio-static-online.cdn.bcebos.com/f70c13cfbf494a3980b29619b85d13d0240d261c04cb441cbdc1f4a788426faf)
+![](./docs/process-graph.png)
 
 对于车牌检测部分，使用常用的检测算法yolo，可以输出目标的检测框和分类概率，但检测框还不能简化校正工作，若能识别出车牌的4个角点就能直接进行矫正了。
 
 与yoloface一样，可在yolo框架中添加关键点回归分支，从而实现对车牌4个角点的检测
 
-![](https://ai-studio-static-online.cdn.bcebos.com/f83218d932f641dd8e1ecdbcdc9caf8b9108d3904c8f49fa9e994f63eaab14ed)
+![](./docs/process-img.png)
 
 
 ## 项目概述

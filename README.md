@@ -20,6 +20,7 @@
 ## 环境要求
 
 - Python >= 3.9
+- >>>>>>>> [uv](https://docs.astral.sh/uv/getting-started/installation/) <<<<<<<<<
 - CUDA Toolkit
 - cuDNN
 - PaddlePaddle GPU 版本

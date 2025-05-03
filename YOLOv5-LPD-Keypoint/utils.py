@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 import colorsys
+from PIL import Image, ImageDraw, ImageFont
+import os
 
 
 def four_point_transform(image, pts):
@@ -149,6 +151,20 @@ def draw_points(img, points, color, thickness=2):
         cv2.circle(img, p, thickness, color, -1)
     return img
 
+def cv2AddChineseText(img, text, position, textColor=(0, 255, 0), textSize=30):
+    if (isinstance(img, np.ndarray)):  # 判断是否OpenCV图片类型
+        img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    # 创建一个可以在给定图像上绘图的对象
+    draw = ImageDraw.Draw(img)
+    # font_path = os.path.join(os.path.dirname(__file__), "../simsun.ttc")
+    font_path = "simsun.ttc"
+    # 字体的格式
+    fontStyle = ImageFont.truetype(font_path, textSize, encoding="utf-8")
+    # 绘制文本
+    draw.text(position, text, textColor, font=fontStyle)
+    # 转换回OpenCV格式
+    return cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
+
 
 def plot_one_box(x, im, color=(128, 128, 128), label=None, line_thickness=3):
     """一般会用在detect.py中在nms之后变量每一个预测框，再将每个预测框画在原图上
@@ -183,5 +199,6 @@ def plot_one_box(x, im, color=(128, 128, 128), label=None, line_thickness=3):
         # cv2.putText: 在图片上写文本 这里是在上面这个矩形框里写label + score文本
         # (c1[0], c1[1] - 2)文本左下角坐标  0: 文字样式  fontScale: 字体缩放系数
         # [225, 255, 255]: 文字颜色  thickness: tf字体笔画线宽     lineType: 线样式
-        cv2.putText(im, label, (c1[0], c1[1] - 2), 0, tl / 3, [225, 255, 255], thickness=2, lineType=cv2.LINE_AA)
-
+        # cv2.putText(im, label, (c1[0], c1[1] - 2), 0, tl / 3, [225, 255, 255], thickness=2, lineType=cv2.LINE_AA)
+        return cv2AddChineseText(im, label, (c1[0], c1[1]-t_size[1]), tuple([225, 255, 255]), t_size[1])
+    return im

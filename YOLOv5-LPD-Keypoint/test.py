@@ -21,7 +21,7 @@ def test_plot_one_box():
     color = (0, 255, 0)  # 绿色
     
     # 调用plot_one_box函数绘制边界框
-    plot_one_box(bbox, img, color=color, label=label, line_thickness=2)
+    img = plot_one_box(bbox, img, color=color, label=label, line_thickness=2)
     
     # 显示结果
     cv2.imshow('Test Plot One Box', img)

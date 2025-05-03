@@ -2,6 +2,15 @@
 
 车牌检测与识别项目，基于 PaddlePaddle 深度学习框架实现。
 
+<table>
+<tr>
+   <td><img src='./YOLOv5-LPD-Keypoint/test/test3.jpg' /></td>
+   <td><img src='./YOLOv5-LPD-Keypoint/demo/demo3.jpg' /></td>
+</tr>
+</table>
+
+
+
 ## 项目概述
 
 本项目是一个车牌检测与识别系统，主要包含以下组件：

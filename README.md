@@ -21,6 +21,7 @@
 
 - Python >= 3.9
 - 》》》》 [uv](https://docs.astral.sh/uv/getting-started/installation/) 《《《《
+- [WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 - CUDA Toolkit
 - cuDNN
 - PaddlePaddle GPU 版本

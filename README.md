@@ -1,4 +1,4 @@
-# LPD-Project
+# Licence-Plate-Detect-Project
 
 车牌 YOLOv5 检测与 LPRNet 识别项目，基于 PaddlePaddle 深度学习框架实现。
 

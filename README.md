@@ -1,6 +1,6 @@
 # LPD-Project
 
-车牌检测与识别项目，基于 PaddlePaddle 深度学习框架实现。
+车牌 YOLOv5 检测与 LPRNet 识别项目，基于 PaddlePaddle 深度学习框架实现。
 
 <table>
 <tr>

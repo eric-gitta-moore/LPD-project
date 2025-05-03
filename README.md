@@ -7,6 +7,9 @@
    <td><img src='./YOLOv5-LPD-Keypoint/test/test3.jpg' /></td>
    <td><img src='./YOLOv5-LPD-Keypoint/demo/demo3.jpg' /></td>
 </tr>
+<tr>
+  <td colspan=2 align=center><img src='https://ai-studio-static-online.cdn.bcebos.com/7935e425eeec49dc90660b2942e5095477384d3d44ba4957a1c05cb64fe7ce71' /></td>
+</tr>
 </table>
 
 ## 项目简介

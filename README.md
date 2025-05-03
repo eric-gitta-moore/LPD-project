@@ -2,16 +2,6 @@
 
 车牌 YOLOv5 检测与 LPRNet 识别项目，基于 PaddlePaddle 深度学习框架实现。
 
-<table>
-<tr>
-   <td><img src='./YOLOv5-LPD-Keypoint/test/test3.jpg' /></td>
-   <td><img src='./YOLOv5-LPD-Keypoint/demo/demo3.jpg' /></td>
-</tr>
-<tr>
-  <td colspan=2 align=center><img src='./docs/yolo-demo.png' /></td>
-</tr>
-</table>
-
 ## 项目简介
 
 在车牌检测任务中，最简单的流程就是车牌检测+车牌识别两个步骤，但当镜头没有正对车牌的时候，图片中的车牌会有透视变形，增加识别任务的难度。
@@ -26,6 +16,16 @@
 
 ![](./docs/process-img.png)
 
+
+<table>
+<tr>
+  <td colspan=2 align=center><img src='./docs/yolo-demo.png' /></td>
+</tr>
+<tr>
+   <td><img src='./YOLOv5-LPD-Keypoint/test/test3.jpg' /></td>
+   <td><img src='./YOLOv5-LPD-Keypoint/demo/demo3.jpg' /></td>
+</tr>
+</table>
 
 ## 项目概述
 

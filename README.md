@@ -137,7 +137,7 @@ python main.py
 - [CCPD PDRC 中科大-车牌数据集](https://aistudio.baidu.com/datasetdetail/17968)
 
 ## 参考
-> 实在跑不动建议直接 copy 下面两个项目在 飞桨 AI Studio 里面跑
+> 实在跑不动建议直接 copy 下面两个项目在 飞桨 AI Studio 里面不用配置任何环境，直接跑
 
 - [YOLOv5车牌+关键点检测](https://aistudio.baidu.com/projectdetail/6545272)
 - [车牌识别LPRNet](https://aistudio.baidu.com/projectdetail/5628649)

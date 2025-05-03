@@ -61,7 +61,6 @@ python check.py
 
 1. 下载中文字体：
 ```bash
-# 从以下地址下载字体
 git clone https://github.com/eric-gitta-moore/linux-fonts
 cd linux-fonts
 chmod +x ./install.sh
@@ -77,11 +76,25 @@ python YOLOv5-LPD-Keypoint/test.py
 
 详细说明请参考 [font.md](font.md)。
 
+### 5. 下载预训练模型
+
+1. 从以下地址下载预训练模型：
+   https://github.com/eric-gitta-moore/LPD-project/releases/tag/v0.0.1
+   - LPRNet-LPD-Keypoint.zip
+   - YOLOv5-LPD-Keypoint.zip
+
+2. 将下载的压缩包中的 `runs` 目录复制到对应的模型目录下
+
+详细说明请参考 [pretrained.md](pretrained.md)。
+
 ## 项目结构
 
 ```
 LPD-project/
 ├── YOLOv5-LPD-Keypoint/    # 车牌检测模型
+│   ├── demo/               # 演示示例
+│   │   └── demo3.jpg      # 车牌检测演示图片
+│   └── test.py            # 测试脚本
 ├── LPRNet-LPD-Keypoint/    # 车牌识别模型
 ├── assets/                 # 资源文件
 ├── setup-env.sh           # 环境设置脚本
@@ -97,6 +110,9 @@ LPD-project/
 ```bash
 python main.py
 ```
+
+3. 查看演示效果：
+   - 在 `YOLOv5-LPD-Keypoint/demo` 目录下提供了车牌检测的演示图片
 
 ## 注意事项
 
